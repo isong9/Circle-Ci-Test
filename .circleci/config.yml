@@ -8,7 +8,8 @@ jobs:
       - run: echo "This is message in Circle Worker!"
       - run: pwd
       - run: uname -a
-      - run: "curl -X POST -H 'Content-type: application/json' --data '{\"text\":\" Hello, <Nickname>!\"}' https://hooks.slack.com/services/T01FCLYDL02/B01F9JQ7VUM/eme SnzqFNRPtk6ZYLpv7IlpW"
+        #      - run: "curl -X POST -H 'Content-type: application/json' --data '{\"text\":\" Hello, <Nickname>!\"}' https://hooks.slack.com/services/T01FCLYDL02/B01F9JQ7VUM/eme SnzqFNRPtk6ZYLpv7IlpW"
+      - run: "curl -X POST -H 'Content-type: application/json' --data '{\"text\":\" Hello, isong9!\"}' ${SLACK_API_URL}"
 
 workflows:   
   welcome:     
