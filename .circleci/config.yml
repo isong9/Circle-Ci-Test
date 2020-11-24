@@ -4,7 +4,10 @@ jobs:
   hello:
     machine: true     
     steps:  
-      - run: echo "Hello, world!"
+      - run: echo "Hello, FooBar!"
+      - run: echo "This is message in Circle Worker!"
+      - run: pwd
+      - run: uname -a
 
 workflows:   
   welcome:     
