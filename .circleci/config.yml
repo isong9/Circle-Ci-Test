@@ -6,7 +6,7 @@ jobs:
     steps:  
       - checkout
       - run: echo 'Hello, World'
-      - run cat .circleci/config.yml
+      - run: cat .circleci/config.yml
     #- run: echo "Hello, FooBar!"
     #  - run: echo "This is message in Circle Worker!"
         #      - run: pwd
