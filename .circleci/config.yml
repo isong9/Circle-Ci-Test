@@ -1,10 +1,10 @@
 version: 2.1
 
-jobs:   
+jobs:
   test:
     docker:
       - image: python:3.6
-    steps:  
+    steps:
       - checkout
       - run: pip install flask pytest
       - run: py.test
@@ -15,7 +15,7 @@ jobs:
           path: /tmp/hello-latest.zip
           destination: hello-latest.zip
 
-workflows:   
-  welcome:     
-    jobs:       
+workflows:
+  welcome:
+    jobs:
       - test:
